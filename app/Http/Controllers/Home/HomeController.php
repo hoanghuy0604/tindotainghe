@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use App\STShop\Product\ProductTable;
 use App\STShop\Slider\SliderTable;
-
+use View;
 class HomeController extends Controller
 {
     public function __construct(ProductTable $productTable, SliderTable $sliderTable)
@@ -20,7 +20,6 @@ class HomeController extends Controller
         $productCC  = $this->productTable->findByProductCC();
         $productGR  = $this->productTable->findByProductGR();
         $slider     = $this->sliderTable->fetchAll();
-
         return view('home.index', [
             'productHot' => $productHot,
             'productCC'  => $productCC,
@@ -30,7 +29,6 @@ class HomeController extends Controller
             ]
         );
     }
-
     public function sitemap()
     {
         return view('home.sitemap');

@@ -1,7 +1,7 @@
 @extends('home.layout')
-@section('des')Bánh Pía, Bánh Pía Sầu Riêng, Bánh Pía Sóc Trăng, chăn lông cừu, chăn giá rẻ, chăn siêu nhẹ, chăn lông cừu ultimate
+@section('des')
 @endsection
-@section('key')Bánh Pía, Bánh Pía Sầu Riêng, Bánh Pía Sóc Trăng, chăn lông cừu, chăn giá rẻ, chăn siêu nhẹ, chăn lông cừu ultimate
+@section('key')
 @endsection
 @section('slider')
     <section id="slider"><!--slider-->
@@ -14,26 +14,25 @@
                             <li data-target="#slider-carousel" data-slide-to="1"></li>
                             <li data-target="#slider-carousel" data-slide-to="2"></li>
                         </ol>
-
                         <div class="carousel-inner">
                             @if(isset($slider))
                                 @foreach($slider as $sl)
                                     <div class="item @if($sl->active == 1) active @endif">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-3">
                                             <h1><span>ST</span>-SHOP</h1>
                                             <h2>{{$sl->name}}</h2>
                                             <p>{{ $sl->description }}</p>
                                             <a class="btn btn-default get" href="{{$sl->link}}">Xem</a>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <img src="{{$sl->images}}" class="girl img-responsive" alt="{{$sl->name}}" />
+                                        <div class="col-sm-9">
+                                            <img src="{{$sl->images}}" class="girl img-responsive" alt="{{$sl->name}}" style="width: 100%"/>
                                             {{--<img src="images/home/pricing.png"  class="pricing" alt="" />--}}
                                         </div>
                                     </div>
                                 @endforeach
                             @endif
                         </div>
-
+                        <br>
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
                         </a>
@@ -195,4 +194,5 @@
             </div>
         </div><!--/category-tab-->
     </div>
+    @include('home.right')
 @endsection

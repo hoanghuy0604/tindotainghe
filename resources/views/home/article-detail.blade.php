@@ -14,22 +14,22 @@
 @endsection
 @section('content')
     <div class="col-sm-9 padding-right">
-        <h3> {{ $article->name }} </h3>
-        @if(isset($article))
-            {!! $article->content !!}
-        @endif
-         </br>
-                <hr>
-                </br>
-                    <div class="fb-comments" data-href="http://stshop.vn/" data-numposts="10"></div>
-                
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=438910246304975";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>                
+        {{--<h3> {{ $article->name }} </h3>--}}
+        {{--@if(isset($article))--}}
+            {{--{!! $article->content !!}--}}
+        {{--@endif--}}
+         {{--</br>--}}
+                {{--<hr>--}}
+                {{--</br>--}}
+                    {{--<div class="fb-comments" data-href="http://stshop.vn/" data-numposts="10"></div>--}}
+                {{----}}
+                {{--<script>(function(d, s, id) {--}}
+                  {{--var js, fjs = d.getElementsByTagName(s)[0];--}}
+                  {{--if (d.getElementById(id)) return;--}}
+                  {{--js = d.createElement(s); js.id = id;--}}
+                  {{--js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=438910246304975";--}}
+                  {{--fjs.parentNode.insertBefore(js, fjs);--}}
+                {{--}(document, 'script', 'facebook-jssdk'));</script>                --}}
                 <hr>
         <div class="recommended_items"><!--recommended_items-->
             <h2 class="title text-center">Có thể bạn quan tâm</h2>

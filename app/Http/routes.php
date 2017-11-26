@@ -16,13 +16,11 @@ use Illuminate\Support\Facades\Route;
 //
 //});
 
-
 Route::get('/admin-stshop', [
     'middleware' => App\Http\Middleware\Authentication::class,
     'uses' => 'Admin\AdminController@home',
     'as'   => 'admin'
 ]);
-
 /*
 |--------------------------------------------------------------------------
 | Category

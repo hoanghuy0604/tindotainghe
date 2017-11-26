@@ -27,18 +27,19 @@
     <link rel="stylesheet" type="text/css" href="/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 @endsection
+
 @section('content')
     <div class="col-sm-9 padding-right">
         <div class="product-details"><!--product-details-->
             <div class="col-sm-5" style="margin-top: 20px">
                 <p>{{--                    @if(isset($product->img1)){{$product->img1}}@endif--}}
-                    <a class="fancybox" href="@if(isset($product->img1)){{$product->img1}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img1)){{$product->img1}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif"  width="150px" /></a>
+                    <a class="fancybox" href="@if(isset($product->img1)){{$product->img1}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img1)){{$product->img1}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif"  width="350px" /></a>
 
-                    <a class="fancybox" href="@if(isset($product->img2)){{$product->img2}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img2)){{$product->img2}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif" width="150px"/></a>
+                    {{--<a class="fancybox" href="@if(isset($product->img2)){{$product->img2}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img2)){{$product->img2}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif" width="150px"/></a>--}}
 
-                    <a class="fancybox" href="@if(isset($product->img3)){{$product->img3}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img3)){{$product->img3}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif" width="150px" /></a>
+                    {{--<a class="fancybox" href="@if(isset($product->img3)){{$product->img3}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img3)){{$product->img3}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif" width="150px" /></a>--}}
 
-                    <a class="fancybox" href="@if(isset($product->img4)){{$product->img4}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img4)){{$product->img4}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif" width="150px"/></a>
+                    {{--<a class="fancybox" href="@if(isset($product->img4)){{$product->img4}}@endif" data-fancybox-group="gallery" title="@if(isset($product->name)){{$product->name}}@endif"><img src="@if(isset($product->img4)){{$product->img4}}@endif" alt="@if(isset($product->name)){{$product->name}}@endif" width="150px"/></a>--}}
                 </p>
             </div>
             <div class="col-sm-7">
@@ -63,7 +64,6 @@
             <div class="col-sm-12">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#details" data-toggle="tab">Chi tiết</a></li>
-                    <li><a href="#tag" data-toggle="tab">Tag</a></li>
                 </ul>
             </div>
             <div class="tab-content">
@@ -74,7 +74,7 @@
                 </br>
                 <hr>
                 </br>
-                    
+
                 </div>
                 <div class="tab-pane fade" id="tag" >
                     <a href="http://stshop.vn/"><span class="label label-primary">ST Shop, phụ kiện điện thoại Hà Nội, ốp lưng cao cấp</span></a>
@@ -84,17 +84,17 @@
                     <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện Iphone Hà Nội</span></a>
                     <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
                     <a href="http://stshop.vn/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện Iphone 5, 6, 6plus</span></a>                    
-                </div>                                
+                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện Iphone 5, 6, 6plus</span></a>
+                </div>
             </div>
-            <div class="fb-comments" data-href="http://stshop.vn/" data-numposts="10"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=438910246304975";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
+            {{--<div class="fb-comments" data-href="http://stshop.vn/" data-numposts="10"></div>--}}
+                {{--<script>(function(d, s, id) {--}}
+                  {{--var js, fjs = d.getElementsByTagName(s)[0];--}}
+                  {{--if (d.getElementById(id)) return;--}}
+                  {{--js = d.createElement(s); js.id = id;--}}
+                  {{--js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=438910246304975";--}}
+                  {{--fjs.parentNode.insertBefore(js, fjs);--}}
+                {{--}(document, 'script', 'facebook-jssdk'));</script>--}}
                 </div>
                 <div class="recommended_items"><!--recommended_items-->
             <h2 class="title text-center">Sản phẩm liên quan</h2>
@@ -151,7 +151,8 @@
             </div>
         </div>
         </div><!--/category-tab-->
-        <!--/recommended_items-->        
+        <!--/recommended_items-->
+    @include('home.right')
     </div>
 @endsection
 @section('js')
