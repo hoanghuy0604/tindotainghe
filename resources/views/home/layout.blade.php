@@ -41,11 +41,11 @@
 
         {{--ga('create', 'UA-80133423-1', 'auto');--}}
         {{--ga('send', 'pageview');--}}
-
     {{--</script>--}}
 </head><!--/head-->
 
 <body>
+
 <header id="header"><!--header-->
     <div class="header_top"><!--header_top-->
         <div class="container">
@@ -281,7 +281,12 @@
     </div>
 
 </footer><!--/Footer-->
-
+    <div class="btn btn-danger btn-primary" style="bottom: 165px;left:0px;position: fixed;zoom: 1.2">
+        <i style="color: red" class="fa fa-phone"> </i><span> </span> <a style="color: red" href="tel:0969.849.848" title="0969.849.848 ">0969.849.848 </a>
+    </div>
+    <div class="btn btn-danger btn-primary" style="bottom: 125px;left:0px;;position: fixed;zoom: 1.2">
+        <i style="color: red" class="fa fa-phone"> </i><span> </span> <a style="color: red" href="tel:0979.118.680" title="0979.118.680 ">0979.118.680 </a>
+    </div>
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
