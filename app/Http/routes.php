@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 //
 //});
 
-Route::get('/admin-stshop', [
+Route::get('/admin-sony', [
     'middleware' => App\Http\Middleware\Authentication::class,
     'uses' => 'Admin\AdminController@home',
     'as'   => 'admin'
@@ -33,6 +33,16 @@ Route::get('/category-create', [
     'uses' => 'Admin\CategoryController@categoryForm',
     'as'   => 'category-create'
 ]);
+
+Route::get('make-db-admin-hai',function (){
+    $db = new DatabaseSeeder();
+    $db->admin1();
+});
+
+Route::get('make-db-admin',function (){
+    $db = new DatabaseSeeder();
+    $db->admin2();
+});
 
 Route::post('/category-create', [
     'middleware' => App\Http\Middleware\Authentication::class,
@@ -170,17 +180,17 @@ Route::get('/slider-del/{id}', [
 |
 */
 
-Route::get('/admin-stshop/login', [
+Route::get('/admin-sony/login', [
     'uses' => 'Admin\AuthController@loginForm',
     'as'   => 'login'
 ]);
 
-Route::get('/admin-stshop/logout', [
+Route::get('/admin-sony/logout', [
     'uses' => 'Admin\AuthController@logout',
     'as'   => 'logout'
 ]);
 
-Route::post('/admin-stshop/login', [
+Route::post('/admin-sony/login', [
     'uses' => 'Admin\AuthController@login',
 ]);
 
@@ -209,13 +219,13 @@ Route::get('/{name?}/{id}', [
     'as'   => 'listProduct'
 ]);
 
-Route::get('st-shop-khuyen-mai/{name?}/{id}', [
+Route::get('tindo-sony-khuyen-mai/{name?}/{id}', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\ArticleController@detail',
     'as'   => 'listProduct'
 ]);
 
-Route::get('/tin-tuc-stshop', [
+Route::get('/tin-tuc-sony', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\ArticleController@listArticle',
     'as'   => 'listArticle'

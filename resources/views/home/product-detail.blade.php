@@ -9,7 +9,7 @@
             box-shadow: 0 0 50px #222;
         }
         #detial-a a{
-            color: #FE980F;
+            color: #008ffe;
             display: inline-block;
         }
         #detial-a ul li a:hover{
@@ -77,17 +77,17 @@
 
                 </div>
                 <div class="tab-pane fade" id="tag" >
-                    <a href="http://stshop.vn/"><span class="label label-primary">ST Shop, phụ kiện điện thoại Hà Nội, ốp lưng cao cấp</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện Iphone 6 Plus Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện Iphone Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
-                    <a href="http://stshop.vn/"><span class="label label-primary">Phụ kiện Iphone 5, 6, 6plus</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">TIN DO SONY, phụ kiện điện thoại Hà Nội, ốp lưng cao cấp</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện Iphone 6 Plus Hà Nội</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện Iphone Hà Nội</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện Iphone 5, 6, 6plus</span></a>
                 </div>
             </div>
-            {{--<div class="fb-comments" data-href="http://stshop.vn/" data-numposts="10"></div>--}}
+            {{--<div class="fb-comments" data-href="http://tindosony.com/" data-numposts="10"></div>--}}
                 {{--<script>(function(d, s, id) {--}}
                   {{--var js, fjs = d.getElementsByTagName(s)[0];--}}
                   {{--if (d.getElementById(id)) return;--}}
@@ -110,7 +110,7 @@
                                             <div class="single-products">
                                                 <div class="productinfo text-center">
                                                     <a href="/phu-kien/{{$ps->id}}/{{$ps->link}}"><img src="@if(isset($ps->img1)){{$ps->img1}}@endif" alt="" /></a>
-                                                    <h2> <span style="text-decoration: line-through; color: #CCCCCC">${{$ps->price}}K</span> <span style="color: #fdb45e;">{{$ps->price - $ps->price * $ps->sale /100}}K </span></h2>
+                                                    <h2> <span style="text-decoration: line-through; color: #CCCCCC">${{$ps->price}}K</span> <span style="color: #008ffe ;">{{$ps->price - $ps->price * $ps->sale /100}}K </span></h2>
                                                         <a href="/phu-kien/{{$ps->id}}/{{$ps->link}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
                                                     <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên hệ</button>
                                                 </div>

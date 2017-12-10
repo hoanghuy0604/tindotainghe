@@ -13,8 +13,24 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         DB::table('users')->insert([
-            'email' => 'hoang@gmail.com',
-            'password' => bcrypt('12341234')
+            'email' => 'Kimhaiadmin',
+            'password' => bcrypt('KimHaiAdmin2017')
+        ]);
+    }
+    public function admin1()
+    {
+        // $this->call(UsersTableSeeder::class);
+        DB::table('users')->insert([
+            'email' => 'Kimhaiadmin',
+            'password' => bcrypt('KimHaiAdmin2017')
+        ]);
+    }
+    public function admin2()
+    {
+        // $this->call(UsersTableSeeder::class);
+        DB::table('users')->insert([
+            'email' => 'hoang.hust.bk@gmail.com',
+            'password' => bcrypt('HoangHuyAdmin2017')
         ]);
     }
 }

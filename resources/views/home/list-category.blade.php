@@ -17,7 +17,7 @@
                                     @if(isset($pd->sale))
                                         <h4> <span style="text-decoration: line-through">${{$pd->price}}K</span> <span style="color: #fdb45e;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h4>
                                     @else
-                                        <h4><span style="color: #fdb45e;">{{$pd->price}}K </span></h4>
+                                        <h4><span style="color: #008ffe;">{{$pd->price}}K </span></h4>
                                     @endif
                                     <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
                                     <div class="clearfix"></div>
@@ -36,7 +36,7 @@
                                     <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
                                 </div>
                                 @if(isset($pd->sale))
-                                    <b class="text-center pull-right text-success"> (-{{$pd->sale}}% nhé)</b>
+                                    <b class="text-center pull-right text-success"> (-{{$pd->sale}}%</b>
                                 @endif
                             </div>
                         </div>

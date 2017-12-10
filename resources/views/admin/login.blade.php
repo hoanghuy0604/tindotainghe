@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>STSHOP login</title>
+    <title>TIN DO SONY login</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset("admin/vendors/bootstrap/dist/css/bootstrap.min.css") }}" rel="stylesheet">
@@ -48,8 +48,8 @@
                     <div class="separator">
 
                         <div>
-                            <h1><i class="fa fa-paw"></i> STShop</h1>
-                            <p>©2016 All Rights Reserved. STShop. Privacy and Terms</p>
+                            <h1><i class="fa fa-paw"></i> TIN DO SONY</h1>
+                            <p>©2016 All Rights Reserved. TIN DO SONY. Privacy and Terms</p>
                         </div>
                     </div>
                 </form>

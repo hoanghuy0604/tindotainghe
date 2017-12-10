@@ -4,6 +4,7 @@
 @section('key')
 @endsection
 @section('slider')
+
     <section id="slider"><!--slider-->
         <div class="container">
             <div class="row">
@@ -18,13 +19,13 @@
                             @if(isset($slider))
                                 @foreach($slider as $sl)
                                     <div class="item @if($sl->active == 1) active @endif">
-                                        <div class="col-sm-3">
-                                            <h1><span>ST</span>-SHOP</h1>
-                                            <h2>{{$sl->name}}</h2>
-                                            <p>{{ $sl->description }}</p>
-                                            <a class="btn btn-default get" href="{{$sl->link}}">Xem</a>
-                                        </div>
-                                        <div class="col-sm-9">
+                                        {{--<div class="col-sm-3" style="text-align: center">--}}
+                                            {{--<h2><span style="color: orange">SHOP<br><br></span>TÍN ĐỒ SONY</h2><br>--}}
+                                            {{--<h3>{{$sl->name}}</h3>--}}
+                                            {{--<p>{{ $sl->description }}</p>--}}
+                                            {{--<a class="btn btn-default get" href="{{$sl->link}}">Xem</a>--}}
+                                        {{--</div>--}}
+                                        <div class="col-sm-11" style="padding-right: 15px">
                                             <img src="{{$sl->images}}" class="girl img-responsive" alt="{{$sl->name}}" style="width: 100%"/>
                                             {{--<img src="images/home/pricing.png"  class="pricing" alt="" />--}}
                                         </div>
@@ -36,7 +37,7 @@
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
                         </a>
-                        <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+                        <a href="#slider-carousel" class="right control-carousel hidden-xs" style="padding-left: 30px" data-slide="next">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </div>
@@ -49,8 +50,8 @@
 
 @section('content')
 
-    <div class="col-sm-9 padding-right">
-        <div class="features_items"><!--features_items-->
+    <div class="col-md-8 padding-right col-lg-9">
+        <div class="features_items" style="padding-top: 7px"><!--features_items-->
             <h2 class="title text-center">Sản phẩm Nổi Bật</h2>
             @if(isset($productHot))
                 @foreach($productHot as $index => $pd)
@@ -60,7 +61,7 @@
                                 <div class="productinfo text-center">
                                     <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
                                     @if(isset($pd->sale))
-                                        <h4> <span style="text-decoration: line-through">${{$pd->price}}K</span> <span style="color: #fdb45e;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h4>
+                                        <h4> <span style="text-decoration: line-through">${{$pd->price}}K</span> <span style="color: #008ffe;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h4>
                                     @else
                                         <h4><span style="color: #fdb45e;">{{$pd->price}}K </span></h4>
                                     @endif
@@ -81,7 +82,7 @@
                                     <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
                                 </div>
                                 @if(isset($pd->sale))
-                                    <b class="text-center pull-right text-success"> (-{{$pd->sale}}% nhé)</b>
+                                    <b class="text-center pull-right text-success"> -{{$pd->sale}}% </b>
                                 @endif
                             </div>
                         </div>
@@ -96,7 +97,7 @@
             @endif
         </div><!--features_items-->
 
-        <div class="recommended_items"><!--recommended_items-->
+        <div class="recommended_items" style="padding-top: 7px"><!--recommended_items-->
             <h2 class="title text-center">Sản Phẩm Bán Chạy</h2>
         </div><!--/recommended_items-->
 
@@ -119,7 +120,7 @@
                                         <div class="productinfo text-center">
                                             <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
                                             @if(isset($pd->sale))
-                                                <h2> <span style="text-decoration: line-through; color: #CCCCCC">{{$pd->price}}K</span> <span style="color: #fdb45e;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h2>
+                                                <h2> <span style="text-decoration: line-through; color: #CCCCCC">{{$pd->price}}K</span> <span style="color: #008ffe;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h2>
                                             @else
                                                 <h2><span style="color: #fdb45e;">{{$pd->price}}K </span></h2>
                                             @endif
