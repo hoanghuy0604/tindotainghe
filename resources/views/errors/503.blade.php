@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="@yield('des')">
     <meta name="keywords" content="@yield('')" />
-    <meta name="author" content="TIN DO SONY">
+    <meta name="author" content="TÍN ĐỒ SONY">
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     <meta http-equiv="content-language" content="vi" />
-    <title>TIN DO SONY </title>
+    <title>TÍN ĐỒ SONY </title>
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
-    <title>Home | TIN DO SONY</title>
+    <title>Home | TÍN ĐỒ SONY</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/prettyPhoto.css" rel="stylesheet">

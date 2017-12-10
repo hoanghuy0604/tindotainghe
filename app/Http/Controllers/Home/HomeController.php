@@ -29,6 +29,10 @@ class HomeController extends Controller
             ]
         );
     }
+    public function guide()
+    {
+        return view('home.guide',[]);
+    }
     public function sitemap()
     {
         return view('home.sitemap');

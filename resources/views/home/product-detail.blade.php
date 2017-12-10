@@ -45,12 +45,12 @@
             <div class="col-sm-7">
                 <div class="product-information"><!--/product-information-->
                     <h2>@if(isset($product->name)){{$product->name}}@endif</h2>
-                    <p>(Giao hàng miễn phí nội thành Hà Nội)</p>
+                    <p>(Giao hàng toàn quốc)</p>
                     <span>
-                        <h4> <span style="text-decoration: line-through; color: #CCCCCC">${{$product->price}}K</span> <span style="color: #fdb45e;">{{$product->price - $product->price * $product->sale /100}}K </span></h4>
+                        <h4>  <span style="color: red;">{{number_format($product->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($product->price, 0, ',', '.')}} đ</span></h4>
                     </span>
-                    <p><b>Tình trạng: </b> @if(isset($product->type_product)) <i class="fa fa-check-square-o" aria-hidden="true"></i> Còn hàng @else <i class="fa fa-minus-square" aria-hidden="true"></i> Hết hàng @endif</p>
-                    <p><b>Khuyến mãi: </b> @if(isset($product->sale)) <i class="fa fa-check-square-o" aria-hidden="true"></i> {{$product->sale}} @endif %</p>
+                    <p><b>Tình trạng: </b> @if(isset($product->type_product)) <i class="fa fa-check-square-o" style="color: green" aria-hidden="true"></i> Còn hàng @else <i class="fa fa-minus-square" style="color: red" aria-hidden="true"></i> Hết hàng @endif</p>
+                    <p><b>Bảo hành: </b> @if(isset($product->sale))  {{$product->sale}} @endif tháng</p>
                     </br>
                     <button  class="btn btn-fefault cart" style="margin-left: 0" data-toggle="modal" data-target=".lh">
                         <i class="fa fa-shopping-cart"></i>
@@ -77,14 +77,7 @@
 
                 </div>
                 <div class="tab-pane fade" id="tag" >
-                    <a href="http://tindosony.com/"><span class="label label-primary">TIN DO SONY, phụ kiện điện thoại Hà Nội, ốp lưng cao cấp</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện Iphone 6 Plus Hà Nội</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện Iphone Hà Nội</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện điện thoại Hà Nội</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Ốp lưng Iphone Hà Nội</span></a>
-                    <a href="http://tindosony.com/"><span class="label label-primary">Phụ kiện Iphone 5, 6, 6plus</span></a>
+                    <a href="http://tindosony.com/"><span class="label label-primary">TÍN ĐỒ SONY|Tai nghe, loa di động, phụ kiện và các sản phẩm SONY chính hãng giá tốt.</span></a>
                 </div>
             </div>
             {{--<div class="fb-comments" data-href="http://tindosony.com/" data-numposts="10"></div>--}}
@@ -96,7 +89,7 @@
                   {{--fjs.parentNode.insertBefore(js, fjs);--}}
                 {{--}(document, 'script', 'facebook-jssdk'));</script>--}}
                 </div>
-                <div class="recommended_items"><!--recommended_items-->
+                <div><!--recommended_items-->
             <h2 class="title text-center">Sản phẩm liên quan</h2>
 
             <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
@@ -109,10 +102,13 @@
                                         <div class="product-image-wrapper">
                                             <div class="single-products">
                                                 <div class="productinfo text-center">
-                                                    <a href="/phu-kien/{{$ps->id}}/{{$ps->link}}"><img src="@if(isset($ps->img1)){{$ps->img1}}@endif" alt="" /></a>
-                                                    <h2> <span style="text-decoration: line-through; color: #CCCCCC">${{$ps->price}}K</span> <span style="color: #008ffe ;">{{$ps->price - $ps->price * $ps->sale /100}}K </span></h2>
-                                                        <a href="/phu-kien/{{$ps->id}}/{{$ps->link}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
-                                                    <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên hệ</button>
+                                                    <a href="/{{$ps->id}}/{{$ps->link}}"><img src="@if(isset($ps->img1)){{$ps->img1}}@endif" alt="" /></a>
+                                                    <h2>  <span>
+                                                     <h4>
+                                                         <span style="color: red;">{{number_format($product->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($product->price, 0, ',', '.')}} đ</span></h4>
+                                                     </span></h2>
+                                                    <a href="/{{$ps->id}}/{{$ps->link}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
+                                                    <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><span style="color: white"><i class="fa fa-shopping-cart"></i>Liên hệ</span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,10 +125,13 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <a href="/phu-kien/{{$ps->id}}/{{$ps->link}}"><img src="@if(isset($ps->img1)){{$ps->img1}}@endif" alt=""/></a>
-                                                <h2> <span style="text-decoration: line-through; color: #CCCCCC">${{$ps->price}}K</span> <span style="color: #fdb45e;">{{$ps->price - $ps->price * $ps->sale /100}}K </span></h2>
-                                                <a href="/phu-kien/{{$ps->id}}/{{$ps->link}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
-                                                <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên hệ</button>
+                                                <a href="/{{$ps->id}}/{{$ps->link}}"><img src="@if(isset($ps->img1)){{$ps->img1}}@endif" alt="" /></a>
+                                                <h2>  <span>
+                                                     <h4>
+                                                         <span style="color: red;">{{number_format($product->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($product->price, 0, ',', '.')}} đ</span></h4>
+                                                     </span></h2>
+                                                <a href="/{{$ps->id}}/{{$ps->link}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
+                                                <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><span style="color: white"><i class="fa fa-shopping-cart"></i>Liên hệ</span></button>
                                             </div>
                                         </div>
                                     </div>

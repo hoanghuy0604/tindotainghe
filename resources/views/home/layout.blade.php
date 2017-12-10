@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="@yield('des')">
     <meta name="keywords" content="@yield('key')" />
-    <meta name="author" content="TIN DO SONY">
+    <meta name="author" content="TÍN ĐỒ SONY |Tai nghe, loa di động, phụ kiện và các sản phẩm SONY chính hãng giá tốt">
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     <meta http-equiv="content-language" content="vi" />
-    <title>TIN DO SONY | Chuyên các sản phẩm SONY chính hãng giá tốt.</title>
+    <title>TÍN ĐỒ SONY |Tai nghe, loa di động, phụ kiện và các sản phẩm SONY chính hãng giá tốt.</title>
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
     <link href="{{ asset("css/bootstrap.min.css") }}" rel="stylesheet">
@@ -59,7 +59,7 @@
                         </button>
                     </div>
                     <div class="logo pull-left">
-                        <a href="http://tindosony.com/"><img src="/images/home/logo.png" alt="TIN DO SONY" width="200px" height="100px" /></a>
+                        <a href="http://tindosony.com/"><img src="/images/home/logo.png" alt="TÍN ĐỒ SONY" width="200px" height="100px" /></a>
                     </div>
                     <div class="mainmenu col-sm-offset-3">
 
@@ -70,7 +70,9 @@
                                 <ul role="menu" class="sub-menu">
                                     @if(isset($categorymn))
                                         @foreach($categorymn as $ct)
-                                            <li><a href="/{{$ct->description}}/{{$ct->id}}">{{strtoupper($ct->name)}}</a></li>
+                                            @if($ct->type === 0)
+                                            <li><a href="/{{$ct->description}}/{{$ct->id}}">{{($ct->name)}}</a></li>
+                                            @endif
                                         @endforeach
                                     @endif
                                 </ul>

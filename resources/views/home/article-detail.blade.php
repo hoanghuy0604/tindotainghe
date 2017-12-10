@@ -44,8 +44,8 @@
                                         <div class="product-image-wrapper">
                                             <div class="single-products">
                                                 <div class="productinfo text-center">
-                                                    <a href="/st-shop-khuyen-mai/{{$ps->linkUrl}}/{{$ps->id}}"><img src="@if(isset($ps->img)){{$ps->img}}@endif" alt="" /></a>
-                                                    <a href="/st-shop-khuyen-mai/{{$ps->linkUrl}}/{{$ps->id}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
+                                                    <a href="/{{$ps->linkUrl}}/{{$ps->id}}"><img src="@if(isset($ps->img)){{$ps->img}}@endif" alt="" /></a>
+                                                    <a href="/{{$ps->linkUrl}}/{{$ps->id}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
                                                     <small>@if(isset($ps->description)){{$ps->description}}@endif</small>
                                                 </div>
                                             </div>
@@ -63,8 +63,8 @@
                                         <div class="product-image-wrapper">
                                             <div class="single-products">
                                                 <div class="productinfo text-center">
-                                                    <a href="/st-shop-khuyen-mai/{{$ps->linkUrl}}/{{$ps->id}}"><img src="@if(isset($ps->img)){{$ps->img}}@endif" alt="" /></a>
-                                                    <a href="/st-shop-khuyen-mai/{{$ps->linkUrl}}/{{$ps->id}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
+                                                    <a href="/{{$ps->linkUrl}}/{{$ps->id}}"><img src="@if(isset($ps->img)){{$ps->img}}@endif" alt="" /></a>
+                                                    <a href="/{{$ps->linkUrl}}/{{$ps->id}}"><p>@if(isset($ps->name)){{$ps->name}}@endif</p></a>
                                                     <small>@if(isset($ps->description)){{$ps->description}}@endif</small>
                                                 </div>
                                             </div>

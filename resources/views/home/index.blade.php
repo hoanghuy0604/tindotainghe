@@ -59,32 +59,27 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
-                                    @if(isset($pd->sale))
-                                        <h4> <span style="text-decoration: line-through">${{$pd->price}}K</span> <span style="color: #008ffe;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h4>
+                                    <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
+                                    @if(isset($pd->price_sale))
+                                        <h4>  <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @else
-                                        <h4><span style="color: #fdb45e;">{{$pd->price}}K </span></h4>
+                                        <h4><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @endif
-                                    <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                    <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
                                     <div class="clearfix"></div>
                                     </br>
                                 </div>
                                 @if(isset($pd->new))
-                                    <img src="images/home/new.png" class="new" alt="{{$sl->name}}" />
+                                    <img src="/images/home/new.png" class="new" alt="" />
                                 @endif
                                 @if(isset($pd->sale))
-                                    <img src="images/home/sale.png" class="new" alt="{{$sl->name}}" />
+                                    <img src="/images/home/sale.png" class="new" alt="" />
                                 @endif
                             </div>
-                            <div class="choose">
                                 </br>
                                 <div class="text-center">
                                     <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
                                 </div>
-                                @if(isset($pd->sale))
-                                    <b class="text-center pull-right text-success"> -{{$pd->sale}}% </b>
-                                @endif
-                            </div>
                         </div>
                     </div>
                     @if($index == 2)
@@ -107,7 +102,6 @@
                     <li class="active"><a href="#tshirt" data-toggle="tab">Sản phẩm mới về</a></li>
                     <li><a href="#blazers" data-toggle="tab">Top sản phẩm cao cấp </a></li>
                     <li><a href="#sunglass" data-toggle="tab">Sản phẩm giá rẻ</a></li>
-                    <li><a href="#kids" data-toggle="tab">Về chúng tôi</a></li>
                 </ul>
             </div>
             <div class="tab-content">
@@ -118,13 +112,13 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
                                             @if(isset($pd->sale))
-                                                <h2> <span style="text-decoration: line-through; color: #CCCCCC">{{$pd->price}}K</span> <span style="color: #008ffe;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h2>
+                                                <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @else
-                                                <h2><span style="color: #fdb45e;">{{$pd->price}}K </span></h2>
+                                                <h2><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @endif
-                                            <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
                                             <div class="clearfix"></div>
                                             <hr>
                                             <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
@@ -144,13 +138,13 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
                                             @if(isset($pd->sale))
-                                                <h2> <span style="text-decoration: line-through; color: #CCCCCC">{{$pd->price}}K</span> <span style="color: #fdb45e;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h2>
+                                                <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @else
-                                                <h2><span style="color: #fdb45e;">{{$pd->price}}K </span></h2>
+                                                <h2><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @endif
-                                            <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
                                             <div class="clearfix"></div>
                                             <hr>
                                             <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
@@ -170,13 +164,13 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
                                             @if(isset($pd->sale))
-                                                <h2> <span style="text-decoration: line-through; color: #CCCCCC">{{$pd->price}}K</span> <span style="color: #fdb45e;">{{$pd->price - $pd->price * $pd->sale /100}}K </span></h2>
+                                                <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @else
-                                                <h2><span style="color: #fdb45e;">{{$pd->price}}K </span></h2>
+                                                <h2><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @endif
-                                            <a href="/phu-kien/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
                                             <div class="clearfix"></div>
                                             <hr>
                                             <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>

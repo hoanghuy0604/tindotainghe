@@ -31,7 +31,7 @@ class CategoryTable
 
     public function fetchAll()
     {
-        $rawData = \DB::connection()->table(self::Table)->orderBy('id', 'desc')->get();
+        $rawData = \DB::connection()->table(self::Table)->orderBy('id', 'ASC')->get();
 
         return $rawData;
     }

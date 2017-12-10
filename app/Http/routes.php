@@ -207,7 +207,7 @@ Route::get('/', [
     'as'   => 'home'
 ]);
 
-Route::get('/phu-kien/{id}/{name?}', [
+Route::get('/{id}/{name?}', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\ProductController@detail',
     'as'   => 'productDetail'
@@ -230,7 +230,11 @@ Route::get('/tin-tuc-sony', [
     'uses' => 'Home\ArticleController@listArticle',
     'as'   => 'listArticle'
 ]);
-
+Route::get('/guide', [
+    'middleware' => App\Http\Middleware\Menu::class,
+    'uses' => 'Home\HomeController@guide',
+    'as'   => 'guide'
+]);
 Route::get('sitemap.xml', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\HomeController@sitemap',

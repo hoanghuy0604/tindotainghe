@@ -115,7 +115,7 @@ class ProductTable
      */
     public function findByProductCC()
     {
-        $rawData = \DB::connection()->table(self::Table)->where('price', '>',  400)->limit(4)->get();
+        $rawData = \DB::connection()->table(self::Table)->where('price', '>',  1500000)->limit(4)->get();
         return $rawData;
     }
 
@@ -124,7 +124,7 @@ class ProductTable
      */
     public function findByProductGR()
     {
-        $rawData = \DB::connection()->table(self::Table)->where('price', '<',  200)->limit(4)->get();
+        $rawData = \DB::connection()->table(self::Table)->where('price_sale', '<',  1000000)->limit(4)->get();
         return $rawData;
     }
 

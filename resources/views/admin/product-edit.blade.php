@@ -7,7 +7,7 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Tạo mới sản phẩm </h2>
+                <h2>Tạo mới sản phẩm</h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
@@ -67,6 +67,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input name="price" id="" class="form-control col-md-7 col-xs-12" value="@if(isset($product->price)){{$product->price}}@endif">
                         </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Giá sale<span ></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="price_sale" id="" class="form-control col-md-7 col-xs-12" value="@if(isset($product->price_sale)){{$product->price_sale}}@endif">
+                            </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="keyword">Keyword
