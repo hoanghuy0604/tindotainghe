@@ -26,7 +26,9 @@
                                             {{--<a class="btn btn-default get" href="{{$sl->link}}">Xem</a>--}}
                                         {{--</div>--}}
                                         <div class="col-sm-11" style="padding-right: 15px">
-                                            <img src="{{$sl->images}}" class="girl img-responsive" alt="{{$sl->name}}" style="width: 100%"/>
+                                            <a href="{{$sl->link}}">
+                                                <img src="{{$sl->images}}" class="girl img-responsive" alt="{{$sl->name}}" style="width: 100%"/>
+                                            </a>
                                             {{--<img src="images/home/pricing.png"  class="pricing" alt="" />--}}
                                         </div>
                                     </div>
@@ -60,12 +62,12 @@
                             <div class="single-products">
                                 <div class="productinfo text-center">
                                     <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
-                                    @if(isset($pd->price_sale))
+                                    @if(($pd->price_sale))
                                         <h4>  <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @else
-                                        <h4><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
+                                        <h4><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @endif
-                                    <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                    <a href="/{{$pd->id}}/{{$pd->link}}">@if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
                                     <div class="clearfix"></div>
                                     </br>
                                 </div>
@@ -94,18 +96,20 @@
 
         <div class="recommended_items" style="padding-top: 7px"><!--recommended_items-->
             <h2 class="title text-center">Sản Phẩm Bán Chạy</h2>
+
         </div><!--/recommended_items-->
 
         <div class="category-tab"><!--category-tab-->
             <div class="col-sm-12">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tshirt" data-toggle="tab">Sản phẩm mới về</a></li>
-                    <li><a href="#blazers" data-toggle="tab">Top sản phẩm cao cấp </a></li>
-                    <li><a href="#sunglass" data-toggle="tab">Sản phẩm giá rẻ</a></li>
+                    <li class="active"><a href="#new" data-toggle="tab">Sản phẩm mới về</a></li>
+                    <li><a href="#high" data-toggle="tab">Top sản phẩm cao cấp </a></li>
+                    <li><a href="#cheap" data-toggle="tab">Sản phẩm giá rẻ</a></li>
+                    <li><a href="#speaker" data-toggle="tab">Loa</a></li>
                 </ul>
             </div>
             <div class="tab-content">
-                <div class="tab-pane fade active in" id="tshirt" >
+                <div class="tab-pane fade active in" id="new" >
                         @if(isset($productNew))
                             @foreach($productNew as $pd)
                             <div class="col-sm-3">
@@ -113,12 +117,12 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
-                                            @if(isset($pd->sale))
+                                            @if(($pd->price_sale))
                                                 <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @else
-                                                <h2><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
+                                                <h2><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @endif
-                                            <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}">@if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
                                             <div class="clearfix"></div>
                                             <hr>
                                             <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
@@ -130,8 +134,32 @@
                             @endforeach
                         @endif
                 </div>
+                <div class="tab-pane fade in" id="speaker" >
+                    @if(isset($speaker))
+                        @foreach($speaker as $pd)
+                            <div class="col-sm-3">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
+                                            @if(($pd->price_sale))
+                                                <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
+                                            @else
+                                                <h2><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
+                                            @endif
+                                            <a href="/{{$pd->id}}/{{$pd->link}}">@if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
+                                            <div class="clearfix"></div>
+                                            <hr>
+                                            <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
+                                        </div>
 
-                <div class="tab-pane fade" id="blazers" >
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
+                <div class="tab-pane fade" id="high" >
                     @if(isset($productCC))
                         @foreach($productCC as $pd)
                             <div class="col-sm-3">
@@ -139,12 +167,12 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
-                                            @if(isset($pd->sale))
+                                            @if(($pd->price_sale))
                                                 <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @else
-                                                <h2><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
+                                                <h2><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @endif
-                                            <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}">@if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
                                             <div class="clearfix"></div>
                                             <hr>
                                             <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
@@ -157,7 +185,7 @@
                     @endif
                 </div>
 
-                <div class="tab-pane fade" id="sunglass" >
+                <div class="tab-pane fade" id="cheap" >
                     @if(isset($productGR))
                         @foreach($productGR as $pd)
                             <div class="col-sm-3">
@@ -165,12 +193,12 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
-                                            @if(isset($pd->sale))
+                                            @if(($pd->price_sale))
                                                 <h2> <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @else
-                                                <h2><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
+                                                <h2><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h2>
                                             @endif
-                                            <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
+                                            <a href="/{{$pd->id}}/{{$pd->link}}"> @if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif </a>
                                             <div class="clearfix"></div>
                                             <hr>
                                             <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>

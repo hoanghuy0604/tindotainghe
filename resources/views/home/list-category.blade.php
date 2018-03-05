@@ -1,4 +1,4 @@
-@extends('home.layout')
+﻿@extends('home.layout')
 @section('des')@if(isset($keyword)){{$keyword}}@endif
 @endsection
 @section('key')@if(isset($keyword)){{$keyword}}@endif
@@ -14,14 +14,15 @@
                             <div class="single-products">
                                 <div class="productinfo text-center">
                                     <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
-                                    @if(isset($pd->price_sale))
+                                    @if(($pd->price_sale))
                                         <h4>  <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @else
-                                        <h4><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
+                                        <h4><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @endif
-                                    <a href="/{{$pd->id}}/{{$pd->link}}">{{$pd->name}}</a>
-                                    <div class="clearfix"></div>
-                                    </br>
+                                    <div class="clearfix">
+                                        <a href="/{{$pd->id}}/{{$pd->link}}"> @if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
+                                    </div>
+
                                 </div>
                                 @if(isset($pd->new))
                                     <img src="/images/home/new.png" class="new" alt="" />

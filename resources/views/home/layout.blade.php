@@ -23,7 +23,15 @@
     <link href="{{ asset("css/responsive.css") }}" rel="stylesheet">
     <link href="{{ asset("js/html5shiv.js") }}" rel="stylesheet">
     @yield('css')
-    @yield('css')
+    <script src="{{asset('js/jquery.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{asset('js/price-range.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
+    <script type="text/javascript" src="/source/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    @yield('js')
 </head><!--/head-->
 
 <body style="font-family: Arial">
@@ -32,10 +40,11 @@
         <div class="container">
             <ul id="menu-top" class="nav navbar-nav collapse navbar-collapse">
                 <li><a href="/"><icon class="fa fa-home"></icon></a></li>
-                <li><a href="/tin-tuc">Tin tức</a></li>
+                <li><a href="/tin-tuc-sony">Tin tức</a></li>
 
-                <li><a href="/tin-tuc-sony" data-target=".lh">Liên hệ</a></li>
-                <li><a href="/#">Hướng dẫn mua hàng</a> </li>
+                <li><a href="#" data-toggle="modal" data-target=".lh">Liên hệ</a></li>
+                <li><a href="/huong-dan-sony">Hướng dẫn mua hàng</a> </li>
+                <li><a href="/bao-hanh-sony">Bảo hành</a> </li>
                 <li><a>Giờ mở cửa: 9h - 21h</a></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right" style="padding: 10px 15px;color: white">
@@ -71,7 +80,7 @@
                                     @if(isset($categorymn))
                                         @foreach($categorymn as $ct)
                                             @if($ct->type === 0)
-                                            <li><a href="/{{$ct->description}}/{{$ct->id}}">{{($ct->name)}}</a></li>
+                                            <li><a href="/category/{{$ct->description}}/{{$ct->id}}">{{($ct->name)}}</a></li>
                                             @endif
                                         @endforeach
                                     @endif
@@ -267,13 +276,7 @@
 <div class="btn btn-danger btn-primary" style="bottom: 50px;left:0px;position: fixed;width: 150px;border-radius: 15px">
     <i style="color: white" class="fa fa-phone"> </i><span> </span> <a style="color: white" href="tel:0979.118.680" title="0979.118.680"><b>0979.118.680</b></a>
 </div>
-<script src="{{asset('js/jquery.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
-<script src="{{asset('js/price-range.js')}}"></script>
-<script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
-<script src="{{asset('js/main.js')}}"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -282,6 +285,5 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 <div id="fb-root"></div>
-@yield('js')
 </body>
 </html>

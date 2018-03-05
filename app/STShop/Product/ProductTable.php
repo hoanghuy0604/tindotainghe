@@ -67,7 +67,12 @@ class ProductTable
      */
     public function findByCategoryId($categoryId)
     {
-        $rawData = \DB::connection()->table(self::Table)->where('category_id', $categoryId)->paginate(15);
+        $rawData = \DB::connection()->table(self::Table)->where('category_id', $categoryId)->paginate(8);
+        return $rawData;
+    }
+    public function findSpeaker()
+    {
+        $rawData = \DB::connection()->table(self::Table)->where('is_speaker', 1)->paginate(8);
         return $rawData;
     }
 
@@ -91,6 +96,11 @@ class ProductTable
         return $rawData;
     }
 
+    public function findByTypeCategory()
+    {
+        $rawData = \DB::connection()->table(self::Table)->whereNotNull('type_category')->limit(9)->get();
+        return $rawData;
+    }
     /**
      * @param $categoryId
      * @return array|static[]

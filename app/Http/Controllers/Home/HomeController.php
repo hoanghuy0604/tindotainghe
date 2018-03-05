@@ -16,22 +16,30 @@ class HomeController extends Controller
     public function home()
     {
         $productHot = $this->productTable->findByType();
+        $productTop = $this->productTable->findByTypeCategory();
         $productNew = $this->productTable->findByProductNew();
         $productCC  = $this->productTable->findByProductCC();
         $productGR  = $this->productTable->findByProductGR();
         $slider     = $this->sliderTable->fetchAll();
+        $speaker = $this->productTable->findSpeaker();
         return view('home.index', [
             'productHot' => $productHot,
             'productCC'  => $productCC,
             'productNew' => $productNew,
             'productGR'  => $productGR,
-             'slider' => $slider
+                'slider' => $slider,
+                'productTop' => $productTop,
+                'speaker' => $speaker
             ]
         );
     }
     public function guide()
     {
         return view('home.guide',[]);
+    }
+    public function maintain()
+    {
+        return view('home.maintain',[]);
     }
     public function sitemap()
     {

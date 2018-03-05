@@ -43,6 +43,16 @@ class ProductController extends Controller
     {
         $rawData = $request->input();
         $rawData['link'] = str_replace(' ', '-', $rawData['link']);
+        if(isset($rawData['is_speaker'])){
+            if($rawData['is_speaker'] != 'on'){
+                $rawData['is_speaker'] = 0;
+            }else{
+                $rawData['is_speaker'] = 1;
+            }
+        }
+        if($rawData['shopee']){
+            $rawData['shopee'] = ($rawData['shopee']);
+        }
         $this->productTable->insert($rawData);
         return redirect()->route('product');
     }
@@ -104,7 +114,13 @@ class ProductController extends Controller
         if(! isset($rawData['new'])){
             $rawData['new'] = null;
         }
-
+        if(isset($rawData['is_speaker'])){
+            if($rawData['is_speaker'] != 'on'){
+                $rawData['is_speaker'] = 0;
+            }else{
+                $rawData['is_speaker'] = 1;
+            }
+        }
         if(! isset($rawData['sale']) || $rawData['sale'] == 0){
             $rawData['sale'] = null;
         }
@@ -116,7 +132,9 @@ class ProductController extends Controller
         if(! isset($rawData['type_category'])){
             $rawData['type_category'] = null;
         }
-
+        if($rawData['shopee']){
+            $rawData['shopee'] = ($rawData['shopee']);
+        }
         $this->productTable->update($rawData, $id);
         return redirect()->route('product');
     }

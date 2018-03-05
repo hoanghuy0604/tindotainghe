@@ -206,37 +206,43 @@ Route::get('/', [
     'uses' => 'Home\HomeController@home',
     'as'   => 'home'
 ]);
-
-Route::get('/{id}/{name?}', [
-    'middleware' => App\Http\Middleware\Menu::class,
-    'uses' => 'Home\ProductController@detail',
-    'as'   => 'productDetail'
-]);
-
-Route::get('/{name?}/{id}', [
-    'middleware' => App\Http\Middleware\Menu::class,
-    'uses' => 'Home\ProductController@listProduct',
-    'as'   => 'listProduct'
-]);
-
 Route::get('tindo-sony-khuyen-mai/{name?}/{id}', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\ArticleController@detail',
     'as'   => 'listProduct'
 ]);
 
-Route::get('/tin-tuc-sony', [
+Route::get('tin-tuc-sony', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\ArticleController@listArticle',
     'as'   => 'listArticle'
 ]);
-Route::get('/guide', [
-    'middleware' => App\Http\Middleware\Menu::class,
-    'uses' => 'Home\HomeController@guide',
-    'as'   => 'guide'
-]);
+
 Route::get('sitemap.xml', [
     'middleware' => App\Http\Middleware\Menu::class,
     'uses' => 'Home\HomeController@sitemap',
 ]);
+Route::get('huong-dan-sony', [
+    'middleware' => App\Http\Middleware\Menu::class,
+    'uses' => 'Home\HomeController@guide',
+    'as'   => 'guide'
+]);
+Route::get('bao-hanh-sony', [
+    'middleware' => App\Http\Middleware\Menu::class,
+    'uses' => 'Home\HomeController@maintain',
+    'as'   => 'maintain'
+]);
+Route::get('/{id}/{name?}', [
+    'middleware' => App\Http\Middleware\Menu::class,
+    'uses' => 'Home\ProductController@detail',
+    'as'   => 'productDetail'
+]);
+
+Route::get('category/{name?}/{id}', [
+    'middleware' => App\Http\Middleware\Menu::class,
+    'uses' => 'Home\ProductController@listProduct',
+    'as'   => 'listProduct'
+]);
+
+
 

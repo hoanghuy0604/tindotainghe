@@ -69,12 +69,27 @@
                         </div>
                     </div>
                     <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Giá sale<span ></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="price_sale" id="" class="form-control col-md-7 col-xs-12" value="@if(isset($product->price_sale)){{$product->price_sale}}@endif">
+                            </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="keyword">Keyword
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <textarea class="form-control col-md-7 col-xs-12" name="keyword">{{ old('keyword') }}</textarea>
                         </div>
                     </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Link shopee<span ></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="shopee" id="" class="form-control col-md-7 col-xs-12" value="@if(isset($product->shopee)){{$product->shopee}}@endif">
+                            </div>
+                        </div>
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Sản phẩm bán chạy</label>
@@ -123,9 +138,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Loa ?</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
 
+                                <div style="margin-top: 10px">
+                                    <label>
+                                        <input type="checkbox" name="is_speaker" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="keyword">Giảm giá % (nếu có)
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="keyword">Bảo hành (nếu có)
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="number" name="sale"  class="form-control col-md-7 col-xs-12" value="{{ old('sale') }}">

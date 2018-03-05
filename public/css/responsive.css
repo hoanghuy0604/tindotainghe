@@ -137,7 +137,6 @@
 
 .header-middle .col-sm-4 {
 	display: inline-block;
-	overflow: inherit;
 	width: 100%;
 }
 
@@ -177,7 +176,6 @@
 }
 
 .navbar-collapse.in{
-	overflow: inherit;
 }
 
 .mainmenu ul li a.active{
@@ -329,7 +327,6 @@ ul.sub-menu{
 
 .header-middle .col-sm-4{
 	text-align: center;
-	overflow: inherit;
 }
 
 .shop-menu .nav.navbar-nav {
@@ -365,7 +362,6 @@ ul.sub-menu{
 }
 
 .navbar-collapse.in{
-	overflow: inherit;
 }
 
 .mainmenu ul li a.active{
