@@ -52,7 +52,7 @@
 
 @section('content')
 
-    <div class="col-md-8 padding-right col-lg-9">
+    <div class="col-md-12 padding-right col-lg-12">
         <div class="features_items" style="padding-top: 7px"><!--features_items-->
             <h2 class="title text-center">Sản phẩm Nổi Bật</h2>
             @if(isset($productHot))
@@ -96,7 +96,43 @@
 
         <div class="recommended_items" style="padding-top: 7px"><!--recommended_items-->
             <h2 class="title text-center">Sản Phẩm Bán Chạy</h2>
-
+            @if(isset($productTop))
+                @foreach($productTop as $index => $pd)
+                    <div class="col-sm-4">
+                        <div class="product-image-wrapper">
+                            <div class="single-products">
+                                <div class="productinfo text-center">
+                                    <a href="/{{$pd->id}}/{{$pd->link}}"><img src="{{$pd->img1}}" alt="{{$pd->name}}" /></a>
+                                    @if(($pd->price_sale))
+                                        <h4>  <span style="color: red;">{{number_format($pd->price_sale, 0, ',', '.')}} đ </span><span style="text-decoration: line-through; color: #CCCCCC">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
+                                    @else
+                                        <h4><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
+                                    @endif
+                                    <a href="/{{$pd->id}}/{{$pd->link}}">@if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
+                                    <div class="clearfix"></div>
+                                    </br>
+                                </div>
+                                @if(isset($pd->new))
+                                    <img src="/images/home/new.png" class="new" alt="" />
+                                @endif
+                                @if(isset($pd->sale))
+                                    <img src="/images/home/sale.png" class="new" alt="" />
+                                @endif
+                            </div>
+                            </br>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><i class="fa fa-shopping-cart"></i>Liên Hệ</a>
+                            </div>
+                        </div>
+                    </div>
+                    @if($index == 2)
+                        <div class="clearfix"></div>
+                    @endif
+                    @if($index == 5)
+                        <div class="clearfix"></div>
+                    @endif
+                @endforeach
+            @endif
         </div><!--/recommended_items-->
 
         <div class="category-tab"><!--category-tab-->
@@ -217,5 +253,5 @@
             </div>
         </div><!--/category-tab-->
     </div>
-    @include('home.right')
+    {{--@include('home.right')--}}
 @endsection
