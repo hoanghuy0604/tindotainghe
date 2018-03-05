@@ -57,7 +57,7 @@
             <h2 class="title text-center">Sản phẩm Nổi Bật</h2>
             @if(isset($productHot))
                 @foreach($productHot as $index => $pd)
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
@@ -84,12 +84,12 @@
                                 </div>
                         </div>
                     </div>
-                    @if($index == 2)
-                        <div class="clearfix"></div>
-                    @endif
-                    @if($index == 5)
-                        <div class="clearfix"></div>
-                    @endif
+                    {{--@if($index == 3)--}}
+                        {{--<div class="clearfix"></div>--}}
+                    {{--@endif--}}
+                    {{--@if($index == 7)--}}
+                        {{--<div class="clearfix"></div>--}}
+                    {{--@endif--}}
                 @endforeach
             @endif
         </div><!--features_items-->
@@ -98,7 +98,7 @@
             <h2 class="title text-center">Sản Phẩm Bán Chạy</h2>
             @if(isset($productTop))
                 @foreach($productTop as $index => $pd)
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
@@ -125,16 +125,18 @@
                             </div>
                         </div>
                     </div>
-                    @if($index == 2)
-                        <div class="clearfix"></div>
-                    @endif
-                    @if($index == 5)
-                        <div class="clearfix"></div>
-                    @endif
+                    {{--@if($index == 2)--}}
+                        {{--<div class="clearfix"></div>--}}
+                    {{--@endif--}}
+                    {{--@if($index == 5)--}}
+                        {{--<div class="clearfix"></div>--}}
+                    {{--@endif--}}
                 @endforeach
             @endif
         </div><!--/recommended_items-->
-
+    </div>
+    <div class="col-md-12 col-lg-12 padding-right">
+        <div class="col-md-8 padding-right col-lg-9">
         <div class="category-tab"><!--category-tab-->
             <div class="col-sm-12">
                 <ul class="nav nav-tabs">
@@ -251,7 +253,8 @@
 
                 </div>
             </div>
-        </div><!--/category-tab-->
-    </div>
-    {{--@include('home.right')--}}
+        </div>
+        </div>
+        @include('home.right')
+        </div>
 @endsection

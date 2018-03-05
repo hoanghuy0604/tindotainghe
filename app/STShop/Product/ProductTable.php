@@ -92,13 +92,13 @@ class ProductTable
      */
     public function findByType()
     {
-        $rawData = \DB::connection()->table(self::Table)->whereNotNull('type')->limit(9)->get();
+        $rawData = \DB::connection()->table(self::Table)->whereNotNull('type')->limit(12)->get();
         return $rawData;
     }
 
     public function findByTypeCategory()
     {
-        $rawData = \DB::connection()->table(self::Table)->whereNotNull('type_category')->limit(9)->get();
+        $rawData = \DB::connection()->table(self::Table)->whereNotNull('type_category')->limit(12)->get();
         return $rawData;
     }
     /**
