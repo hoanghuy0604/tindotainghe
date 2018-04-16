@@ -20,7 +20,7 @@
                                         <h4><span style="color: red;">{{number_format($pd->price, 0, ',', '.')}} đ</span></h4>
                                     @endif
                                     <div class="clearfix">
-                                        <a href="/{{$pd->id}}/{{$pd->link}}"> @if(isset($pd->name))<h4 style="color: #008ffe">{{$pd->name}}</h4>@endif</a>
+                                        <a href="/{{$pd->id}}/{{$pd->link}}"> @if(isset($pd->name))<h5 style="color: black">{{$pd->name}}</h5>@endif</a>
                                     </div>
 
                                 </div>

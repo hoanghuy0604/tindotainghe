@@ -107,7 +107,7 @@ class ProductTable
      */
     public function findByCategoryIdLimit($categoryId)
     {
-        $rawData = \DB::connection()->table(self::Table)->where('category_id', $categoryId)->limit(6)->get();
+        $rawData = \DB::connection()->table(self::Table)->where('category_id', $categoryId)->limit(8)->get();
         return $rawData;
     }
 

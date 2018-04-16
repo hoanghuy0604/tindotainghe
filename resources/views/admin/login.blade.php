@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TÍN ĐỒ SONY login</title>
+    <title>TÍN ĐỒ TAI NGHE login</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset("admin/vendors/bootstrap/dist/css/bootstrap.min.css") }}" rel="stylesheet">
@@ -48,8 +48,8 @@
                     <div class="separator">
 
                         <div>
-                            <h1><i class="fa fa-paw"></i> TÍN ĐỒ SONY</h1>
-                            <p>©2016 All Rights Reserved. TÍN ĐỒ SONY. Privacy and Terms</p>
+                            <h1><i class="fa fa-paw"></i> TÍN ĐỒ TAI NGHE</h1>
+                            <p>©2018 All Rights Reserved. TÍN ĐỒ TAI NGHE. Privacy and Terms</p>
                         </div>
                     </div>
                 </form>

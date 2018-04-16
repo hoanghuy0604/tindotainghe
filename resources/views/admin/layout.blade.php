@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TÍN ĐỒ SONY Admin</title>
+    <title>TÍN ĐỒ TAI NGHE Admin</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset("admin/vendors/bootstrap/dist/css/bootstrap.min.css") }}" rel="stylesheet">
@@ -37,7 +37,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="/admin-sony" class="site_title"><i class="fa fa-paw"></i> <span>TÍN ĐỒ SONY</span></a>
+                    <a href="/admin-sony" class="site_title"><i class="fa fa-paw"></i> <span>TÍN ĐỒ TAI NGHE</span></a>
                 </div>
 
                 <div class="clearfix"></div>

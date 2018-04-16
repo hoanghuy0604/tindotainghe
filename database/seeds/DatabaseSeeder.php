@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
     /**
+     *
      * Run the database seeds.
      *
      * @return void
@@ -14,15 +15,15 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         DB::table('users')->insert([
             'email' => 'Kimhaiadmin',
-            'password' => bcrypt('KimHaiAdmin2017')
+            'password' => bcrypt('KimHaiAdmin2018')
         ]);
     }
     public function admin1()
     {
         // $this->call(UsersTableSeeder::class);
         DB::table('users')->insert([
-            'email' => 'Kimhaiadmin',
-            'password' => bcrypt('KimHaiAdmin2017')
+            'email' => 'tindotainghe@gmail.com',
+            'password' => bcrypt('Admin2018')
         ]);
     }
     public function admin2()

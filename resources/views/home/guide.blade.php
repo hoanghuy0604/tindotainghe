@@ -1,57 +1,67 @@
 @extends('home.layout')
 @section('content')
     <div>
-        <p style="margin-left:0in; margin-right:0in"><strong><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:13pt"><span style="background-color:white"><span style="color:rgb(79, 129, 189)"><span style="font-size:12pt"><span style="color:black">HƯỚNG DẪN ĐẶT H&Agrave;NG TR&Ecirc;N WEBSITE&nbsp;</span></span></span><span style="color:#2980b9"><span style="font-size:12pt"><em>TINDOSONY.COM</em></span></span></span></span></span></strong></p>
+        <p><strong>HƯỚNG DẪN ĐẶT H&Agrave;NG TR&Ecirc;N WEBSITE&nbsp;<span style="color:#B22222"><em>TINDOTAINGHE.COM</em></span></strong></p>
 
-        <p style="margin-left:0in; margin-right:0in"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><span style="color:#2980b9"><em><strong><span style="font-family:arial,sans-serif">TIN</span></strong><strong><span style="font-family:arial,sans-serif">DOS</span></strong><strong><span style="font-family:arial,sans-serif">ONY.COM</span></strong></em></span></span></span></span></p>
+        <p><span style="color:#B22222"><strong><em>TINDOTAINGHE.COM</em></strong></span></p>
 
-        <p style="margin-left:0in; margin-right:0in"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><span style="font-family:arial,sans-serif"><span style="color:black">- Website b&aacute;n h&agrave;ng trực tuyến, cung cấp h&agrave;ng ngh&igrave;n sản phẩm đến người ti&ecirc;u d&ugrave;ng trong nước v&agrave; quốc tế. Ch&uacute;ng t&ocirc;i li&ecirc;n tục cải tiến c&aacute;c t&iacute;nh năng tr&ecirc;n website ph&ugrave; hợp t&acirc;m l&yacute; người ti&ecirc;u d&ugrave;ng nhằm mục đ&iacute;ch mang đến cho Qu&yacute; kh&aacute;ch sự đơn giản v&agrave; th&acirc;n thiện khi đặt mua sản phẩm v&agrave; sử dụng dịch vụ. Qu&yacute; kh&aacute;ch kh&ocirc;ng cần thiết phải tạo một t&agrave;i khoản tr&ecirc;n website mới đặt được h&agrave;ng.Dưới đ&acirc;y l&agrave; chi tiết hướng dẫn đặt h&agrave;ng tr&ecirc;n website</span></span></span></span></span></p>
+        <p>- Website b&aacute;n h&agrave;ng trực tuyến, cung cấp h&agrave;ng ngh&igrave;n sản phẩm đến người ti&ecirc;u d&ugrave;ng trong nước v&agrave; quốc tế. Ch&uacute;ng t&ocirc;i li&ecirc;n tục cải tiến c&aacute;c t&iacute;nh năng tr&ecirc;n website ph&ugrave; hợp t&acirc;m l&yacute; người ti&ecirc;u d&ugrave;ng nhằm mục đ&iacute;ch mang đến cho Qu&yacute; kh&aacute;ch sự đơn giản v&agrave; th&acirc;n thiện khi đặt mua sản phẩm v&agrave; sử dụng dịch vụ. Qu&yacute; kh&aacute;ch kh&ocirc;ng cần thiết phải tạo một t&agrave;i khoản tr&ecirc;n website mới đặt được h&agrave;ng.Dưới đ&acirc;y l&agrave; chi tiết hướng dẫn đặt h&agrave;ng tr&ecirc;n website</p>
 
-        <p style="margin-left:0in; margin-right:0in"><span style="color:#2980b9"><em><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><strong><span style="font-family:arial,sans-serif">TIN</span></strong><strong><span style="font-family:arial,sans-serif">DOS</span></strong><strong><span style="font-family:arial,sans-serif">ONY.COM</span></strong><strong></strong></span></span></span></em></span></p>
+        <p><span style="color:#B22222"><strong><em>TINDOTAINGHE.COM</em></strong></span></p>
 
-        <p style="margin-left:0in; margin-right:0in"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">1. MUA H&Agrave;NG TRỰC TIẾP:</span></span></strong></span></span></span></p>
-
-        <ul>
-            <li><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><span style="font-family:arial,sans-serif"><span style="color:black">Showroom:&nbsp;<strong>Số 101 ban đối ngoại Trung Ương (khu nh&agrave; 5 tầng) ng&otilde; 409 Kim M&atilde; Ba Đ&igrave;nh H&agrave; Nội</strong></span></span></span></span></span></li>
-        </ul>
-
-        <p style="margin-left:0in; margin-right:0in"><strong><span style="font-size:13pt"><span style="background-color:white"><span style="font-family:cambria,serif"><span style="color:#4f81bd"><span style="font-size:12.0pt"><span style="font-family:arial,sans-serif"><span style="color:black">2. MUA H&Agrave;NG ONLINE:</span></span></span></span></span></span></span></strong></p>
+        <p><strong>1. MUA H&Agrave;NG TRỰC TIẾP:</strong></p>
 
         <ul>
-            <li><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">Khu vực H&agrave; Nội:</span></span></strong>&nbsp;</span></span></span></li>
+            <li>Mua tại:&nbsp;<strong>142 Kim Giang (gần cầu Lủ)Kim Giang, Thanh Xu&acirc;n, H&agrave; Nội.</strong></li>
         </ul>
 
-        <p style="margin-left:0in; margin-right:0in"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">Gọi điện</span></span></strong><span style="font-family:arial,sans-serif"><span style="color:black">&nbsp;hoặc&nbsp;<strong><span style="font-family:arial,sans-serif">SMS</span></strong>&nbsp;với c&uacute; ph&aacute;p: T&ecirc;n h&agrave;ng_Số lượng_M&agrave;u sắc_Người nhận_Giờ nhận_Địa chỉ cụ thể rồi gửi đến&nbsp;<strong><em><span style="font-family:arial,sans-serif">Hotline&nbsp;</span></em></strong></span></span><a href="tel:0969-849-848"><strong><em><span style="font-family:arial,sans-serif"><span style="color:red">0969 849 848</span></span></em></strong></a><strong><em></em></strong><em><span style="font-family:arial,sans-serif"><span style="color:black">(Ch&uacute;ng t&ocirc;i sẽ giao h&agrave;ng tận tay v&agrave; thu tiền tại chỗ sau 30 ph&uacute;t đến 90 ph&uacute;t)</span></span></em></span></span></span></p>
+        <p><strong>2. MUA H&Agrave;NG ONLINE:</strong></p>
 
         <ul>
-            <li><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">Khu &nbsp;vực kh&aacute;c:</span></span></strong><span style="font-family:arial,sans-serif"><span style="color:black">&nbsp;(Tỉnh, TP&nbsp;kh&aacute;c)</span></span></span></span></span></li>
+            <li><strong>Khu vực H&agrave; Nội:</strong>&nbsp;</li>
         </ul>
 
-        <p style="margin-left:0in; margin-right:0in"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><span style="font-family:arial,sans-serif"><span style="color:black">Sau khi kh&aacute;ch h&agrave;ng t&igrave;m kiếm, chọn lựa sản phẩm xong, Click v&agrave;o n&uacute;t&nbsp;<strong><span style="font-family:arial,sans-serif">MUA NGAY&nbsp;</span></strong>để tiến h&agrave;nh đặt h&agrave;ng theo hướng dẫn cụ thể. Ngo&agrave;i ra kh&aacute;ch h&agrave;ng c&oacute; thể&nbsp;<strong><span style="font-family:arial,sans-serif">Gọi điện,</span></strong>&nbsp;<strong><span style="font-family:arial,sans-serif">SMS, Zalo, Skype, Viber, Facebook...&nbsp;</span></strong></span></span><strong><em><u><span style="font-family:arial,sans-serif"><span style="color:red">0969 849 848</span></span></u></em></strong><em>&nbsp;</em><span style="font-family:arial,sans-serif"><span style="color:black">để đặt h&agrave;ng trực tiếp. Ch&uacute;ng t&ocirc;i sẽ xử l&yacute; đơn h&agrave;ng ngay, đ&oacute;ng g&oacute;i, gửi chuyển ph&aacute;t nhanh, th&ocirc;ng b&aacute;o thời gian nhận h&agrave;ng cụ thể cho kh&aacute;ch h&agrave;ng.</span></span></span></span></span></p>
+        <p><strong>Gọi điện</strong>&nbsp;hoặc&nbsp;<strong>SMS</strong>&nbsp;với c&uacute; ph&aacute;p: T&ecirc;n h&agrave;ng_Số lượng_M&agrave;u sắc_Người nhận_Giờ nhận_Địa chỉ cụ thể rồi gửi đến&nbsp;<strong><em>Hotline <span style="color:#B22222">094 365 6286</span></em></strong><a name="_GoBack"></a><em>(Ch&uacute;ng t&ocirc;i sẽ giao h&agrave;ng tận tay v&agrave; thu tiền tại chỗ sau 30 ph&uacute;t đến 90 ph&uacute;t)</em></p>
 
         <ul>
-            <li><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">Mua h&agrave;ng qua </span><span style="color:#e74c3c">SHOPEE</span></span></strong></span></span></span></li>
+            <li><strong>Khu &nbsp;vực kh&aacute;c:</strong>&nbsp;(Tỉnh, TP&nbsp;kh&aacute;c)</li>
         </ul>
 
-        <p style="margin-left:0.5in; margin-right:0in"><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><span style="font-family:arial,sans-serif"><span style="color:black">Bạn c&oacute; thể đặt mua h&agrave;ng online của Shop T&iacute;n Đồ SONY tr&ecirc;n k&ecirc;nh SHOPEE để hưởng c&aacute;c ch&iacute;nh s&aacute;ch dịch vụ ưu đ&atilde;i độc quyền tr&ecirc;n SHOPEE (Freeship, t&iacute;ch xu, giảm gi&aacute;&hellip;) v&agrave; rất đảm bảo uy t&iacute;n kh&ocirc;ng sợ lừa đảo.</span></span></span></span></span></p>
-
-        <h2 style="margin-left:0in; margin-right:0in"><span style="font-size:13pt"><span style="background-color:white"><span style="font-family:cambria,serif"><span style="color:#4f81bd"><strong><strong><span style="font-size:12.0pt"><span style="font-family:arial,sans-serif"><span style="color:black">3. THANH TO&Aacute;N:&nbsp;</span></span></span></strong><span style="font-size:12.0pt"><span style="font-family:arial,sans-serif"><span style="color:black">(c&oacute; nhiều c&aacute;ch thanh to&aacute;n tuyệt đối an to&agrave;n cho kh&aacute;ch h&agrave;ng ở xa)</span></span></span></strong></span></span></span></span></h2>
+        <p>Sau khi kh&aacute;ch h&agrave;ng t&igrave;m kiếm, chọn lựa sản phẩm xong, Click v&agrave;o n&uacute;t&nbsp;<strong>MUA NGAY&nbsp;</strong>để tiến h&agrave;nh đặt h&agrave;ng theo hướng dẫn cụ thể. Ngo&agrave;i ra kh&aacute;ch h&agrave;ng c&oacute; thể&nbsp;<strong>Gọi điện,</strong>&nbsp;<strong>SMS, Zalo, Skype, Viber, Facebook...&nbsp;</strong><strong><em><u><span style="color:#B22222">094 365 6286</span>&nbsp;</u></em></strong>để đặt h&agrave;ng trực tiếp. Ch&uacute;ng t&ocirc;i sẽ xử l&yacute; đơn h&agrave;ng ngay, đ&oacute;ng g&oacute;i, gửi chuyển ph&aacute;t nhanh, th&ocirc;ng b&aacute;o thời gian nhận h&agrave;ng cụ thể cho kh&aacute;ch h&agrave;ng.</p>
 
         <ul>
-            <li><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">Dịch vụ (COD):&nbsp;</span></span></strong><span style="font-family:arial,sans-serif"><span style="color:black">Thanh to&aacute;n khi nhận h&agrave;ng.&nbsp;Với c&aacute;c kh&aacute;ch h&agrave;ng ở xa thường hay lăn tăn về vẫn đề lừa đảo, gian lận l&agrave; chuyển tiền xong v&agrave; kh&ocirc;ng nhận được h&agrave;ng. Ch&iacute;nh v&igrave; vậy ch&uacute;ng t&ocirc;i chọn c&aacute;ch thanh to&aacute;n (COD) nhằm mang tới cho kh&aacute;ch h&agrave;ng 1 sự tin tưởng tuyệt đối l&agrave; kh&aacute;ch h&agrave;ng nhận được sản phẩm rồi sau đ&oacute; mới thanh to&aacute;n cho nh&acirc;n vi&ecirc;n vận chuyển.</span></span></span></span></span></li>
+            <li><strong>Mua h&agrave;ng qua&nbsp;</strong><strong>LAZADA</strong><strong>&amp;&nbsp;</strong><strong>SHOPEE</strong></li>
+        </ul>
+
+        <p style="margin-left:.5in">Bạn c&oacute; thể đặt mua h&agrave;ng online của Shop T&iacute;n Đồ SONY tr&ecirc;n k&ecirc;nh LAZADA &amp; SHOPEE để hưởng c&aacute;c ch&iacute;nh s&aacute;ch dịch vụ ưu đ&atilde;i độc quyền tr&ecirc;n SHOPEE (Freeship, t&iacute;ch xu, giảm gi&aacute;&hellip;) v&agrave; rất đảm bảo uy t&iacute;n kh&ocirc;ng sợ lừa đảo.</p>
+
+        <p style="margin-left:.5in">Chỉ cần click v&agrave;o &ldquo;Mua qua Lazada&rdquo; or &ldquo;Mua qua Shopee&rdquo; rồi tiến h&agrave;nh đặt h&agrave;ng b&igrave;nh thường.</p>
+
+        <p><strong>3. THANH TO&Aacute;N:&nbsp;(c&oacute; nhiều c&aacute;ch thanh to&aacute;n tuyệt đối an to&agrave;n cho kh&aacute;ch h&agrave;ng ở xa)</strong></p>
+
+        <ul>
+            <li><strong>Dịch vụ (COD):&nbsp;</strong>Thanh to&aacute;n khi nhận h&agrave;ng.&nbsp;Với c&aacute;c kh&aacute;ch h&agrave;ng ở xa thường hay lăn tăn về vẫn đề lừa đảo, gian lận l&agrave; chuyển tiền xong v&agrave; kh&ocirc;ng nhận được h&agrave;ng. Ch&iacute;nh v&igrave; vậy ch&uacute;ng t&ocirc;i chọn c&aacute;ch thanh to&aacute;n (COD) nhằm mang tới cho kh&aacute;ch h&agrave;ng 1 sự tin tưởng tuyệt đối l&agrave; kh&aacute;ch h&agrave;ng nhận được sản phẩm rồi sau đ&oacute; mới thanh to&aacute;n cho nh&acirc;n vi&ecirc;n vận chuyển.</li>
         </ul>
 
         <ul>
-            <li><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><strong><span style="font-family:arial,sans-serif"><span style="color:black">Thanh to&aacute;n qua t&agrave;i khoản ng&acirc;n h&agrave;ng:</span></span></strong><span style="font-family:arial,sans-serif"><span style="color:black">&nbsp;Trường hợp kh&aacute;ch h&agrave;ng muốn thanh to&aacute;n trước&nbsp;rồi nhận h&agrave;ng sau th&igrave; qu&yacute; kh&aacute;ch vui l&ograve;ng chuyển khoản theo 1 trong những&nbsp;th&ocirc;ng tin dưới&nbsp;<em><span style="font-family:arial,sans-serif">(ph&iacute;a dưới).&nbsp;</span></em>Sau khi chuyển khoản th&agrave;nh c&ocirc;ng kh&aacute;ch h&agrave;ng h&atilde;y th&ocirc;ng b&aacute;o qua điện thoại </span></span><u><strong><em><span style="font-family:arial,sans-serif"><span style="color:red">0969 849 848</span></span></em></strong></u><span style="font-family:arial,sans-serif"><span style="color:black"> cho ch&uacute;ng r&ocirc;i x&aacute;c nhận:</span></span></span></span></span></li>
-            <li><span style="font-size:11pt"><span style="background-color:white"><span style="font-family:calibri,sans-serif"><strong><u><span style="font-family:arial,sans-serif"><span style="color:black">Th&ocirc;ng tin chuyển khoản:</span></span></u></strong></span></span></span></li>
-            <li><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><span style="font-family:arial,sans-serif"><span style="color:black">Ng&acirc;n h&agrave;ng Vietcombank - VCB&nbsp;( tại sở giao dịch Ngoại Thương Việt Nam )&nbsp;</span></span></span></span></span></li>
+            <li><strong>Thanh to&aacute;n qua t&agrave;i khoản ng&acirc;n h&agrave;ng:</strong>&nbsp;Trường hợp kh&aacute;ch h&agrave;ng muốn thanh to&aacute;n trước&nbsp;rồi nhận h&agrave;ng sau th&igrave; qu&yacute; kh&aacute;ch vui l&ograve;ng chuyển khoản theo 1 trong những&nbsp;th&ocirc;ng tin dưới&nbsp;<em>(ph&iacute;a dưới).&nbsp;</em>Sau khi chuyển khoản th&agrave;nh c&ocirc;ng kh&aacute;ch h&agrave;ng h&atilde;y th&ocirc;ng b&aacute;o qua điện thoại&nbsp;<strong><em><u><span style="color:#B22222">094 365 6286</span>&nbsp;</u></em></strong>cho ch&uacute;ng r&ocirc;i x&aacute;c nhận:</li>
+            <li><strong><u>Th&ocirc;ng tin chuyển khoản:</u></strong></li>
+            <li>Ng&acirc;n h&agrave;ng Vietinbank &nbsp;- Chi nh&aacute;nh: viettinbank Nam thăng Long HN</li>
         </ul>
 
-        <p style="margin-left:12.5pt; margin-right:0in"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><span style="font-family:arial,sans-serif"><span style="color:black">&nbsp;&nbsp;&nbsp;Số t&agrave;i khoản: &nbsp;<strong><em>0021000344621</em></strong></span></span></span></span></span></p>
+        <p style="margin-left:.5in">Số TK: &nbsp;<strong><em>106006655600</em></strong></p>
 
-        <p style="margin-left:12.5pt; margin-right:0in"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:times new roman,serif"><span style="font-family:arial,sans-serif"><span style="color:black">&nbsp;&nbsp; Chủ t&agrave;i khoản: <strong><em>VŨ KIM HẢI</em></strong></span></span></span></span></span></p>
+        <p style="margin-left:.5in">Chủ t&agrave;i khoản:&nbsp;<strong><em>VŨ KIM HẢI</em></strong></p>
 
-        <p><span style="font-size:12.0pt"><span style="font-family:arial,sans-serif"><span style="color:black"><strong><em><span style="font-family:arial,sans-serif">Lưu &yacute;: Bất kỳ t&agrave;i khoản n&agrave;o kh&ocirc;ng được cập nhật ở tr&ecirc;n đều kh&ocirc;ng c&oacute; gi&aacute; trị thanh to&aacute;n.</span></em></strong></span></span></span></p>
+        <ul>
+            <li>Ng&acirc;n h&agrave;ng ACB</li>
+        </ul>
+
+        <p style="margin-left:1.0in">Số TK:<strong><em>253867919</em></strong></p>
+
+        <p style="margin-left:.5in">Chủ t&agrave;i khoản:&nbsp;<strong><em>VŨ KIM HẢI</em></strong></p>
+
+        <p><strong><em>Lưu &yacute;: Bất kỳ t&agrave;i khoản n&agrave;o kh&ocirc;ng được cập nhật ở tr&ecirc;n đều kh&ocirc;ng c&oacute; gi&aacute; trị thanh to&aacute;n.</em></strong></p>
 
     </div>
 @endsection

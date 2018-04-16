@@ -9,7 +9,7 @@
             box-shadow: 0 0 50px #222;
         }
         #detial-a a{
-            color: #008ffe;
+            color: #9c1010;
             display: inline-block;
         }
         #detial-a ul li a:hover{
@@ -64,10 +64,16 @@
                         Liên Hệ
                     </button>
                     @if($product->shopee)
-                    <a class="btn btn-danger" href="{{$product->shopee}}" style="margin-bottom: 10px">
+                    <a class="btn btn-shopee" href="{{$product->shopee}}" style="margin-bottom: 10px">
                         <i class="fa fa-shopping-cart"></i>
                         Mua qua Shopee
                     </a>
+                    @endif
+                    @if($product->lazada)
+                        <a class="btn bg-red" href="{{$product->lazada}}" style="margin-bottom: 10px">
+                            <i class="fa fa-shopping-cart"></i>
+                            Mua qua Lazada
+                        </a>
                     @endif
                     <br>
                     <span class="clearfix" style="font-size: medium">
@@ -96,7 +102,7 @@
 
                 </div>
                 <div class="tab-pane fade" id="tag" >
-                    <a href="http://tindosony.com/"><span class="label label-primary">TÍN ĐỒ SONY|Tai nghe, loa di động, phụ kiện và các sản phẩm SONY chính hãng giá tốt.</span></a>
+                    <a href="http://tindotainghe.com/"><span class="label label-primary">TÍN ĐỒ TAI NGHE|Tai nghe, loa di động, phụ kiện và các sản phẩm SONY chính hãng giá tốt.</span></a>
                 </div>
             </div>
 
@@ -135,7 +141,7 @@
                                                          @endif
                                                      </h4>
                                                      </span></h2>
-                                                    <a href="/{{$ps->id}}/{{$ps->link}}"> @if(isset($ps->name))<h4 style="color: #008ffe">{{$ps->name}}</h4>@endif </a>
+                                                    <a href="/{{$ps->id}}/{{$ps->link}}"> @if(isset($ps->name))<h5 style="color: black">{{$ps->name}}</h5>@endif </a>
                                                     <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><span style="color: white"><i class="fa fa-shopping-cart"></i>Liên hệ</span></button>
                                                 </div>
                                             </div>
@@ -163,7 +169,7 @@
                                                          @endif
                                                      </h4>
                                                      </span></h2>
-                                                <a href="/{{$ps->id}}/{{$ps->link}}">@if(isset($ps->name))<h4 style="color: #008ffe">{{$ps->name}}</h4>@endif</a>
+                                                <a href="/{{$ps->id}}/{{$ps->link}}">@if(isset($ps->name))<h5 style="color: black">{{$ps->name}}</h5>@endif</a>
                                                 <button type="button" class="btn btn-default add-to-cart" data-toggle="modal" data-target=".lh"><span style="color: white"><i class="fa fa-shopping-cart"></i>Liên hệ</span></button>
                                             </div>
                                         </div>

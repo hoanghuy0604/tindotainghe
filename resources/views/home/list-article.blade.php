@@ -5,7 +5,7 @@
 @endsection
 @section('content')   
     <div class="col-sm-9 padding-right">    
-    <h2 class="title text-center">Tin tức TÍN ĐỒ SONY</h2>
+    <h2 class="title text-center">Tin tức TÍN ĐỒ TAI NGHE</h2>
         <div class="features_items"><!--features_items-->
             <h2 class="title text-center">@if(isset($name)) {{$name}} @endif</h2>
             @if(isset($article))
